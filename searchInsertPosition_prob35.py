@@ -30,4 +30,21 @@ def searchInsert_solution1(nums, target):
 
 
 print(searchInsert_solution1(nums = [1,3,5,6], target = 5))
+
+
+def searchInsert_solution2(nums, target):
+    if target in nums:
+        return nums.index(target)
+    elif target < nums[0]:
+        return 0
+    elif target > nums[-1]:
+        return len(nums)
+    else:
+        for index in range(len(nums) - 1):
+            if target > nums[index] and target < nums[index + 1]:
+                return index+1
+
+
+print(searchInsert_solution2(nums = [1,3,5,6], target = 5))
+
     
