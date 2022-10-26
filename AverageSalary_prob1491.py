@@ -3,8 +3,6 @@ You are given an array of unique integers salary where salary[i] is the salary o
 
 Return the average salary of employees excluding the minimum and maximum salary. Answers within 10-5 of the actual answer will be accepted.
 
- 
-
 Example 1:
 
 Input: salary = [4000,3000,1000,2000]
