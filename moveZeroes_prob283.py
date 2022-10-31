@@ -15,7 +15,7 @@ Output: [0]
  
 """
 
-def moveZeroes(self, nums: List[int]) -> None:
+def moveZeroes(nums):
     """
     Do not return anything, modify nums in-place instead.
     """
