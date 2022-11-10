@@ -32,3 +32,17 @@ The largest number in nums is 3.
 The greatest common divisor of 3 and 3 is 3.
  
 """
+
+def findGCD(nums):
+    minNum = min(nums)
+    maxNum = max(nums)
+    GCD = 1
+    num = 2
+    while num <= minNum:
+        if minNum % num == 0 and maxNum % num == 0:
+            GCD = num
+        num += 1
+    return GCD
+
+
+print(findGCD([3,3]))
